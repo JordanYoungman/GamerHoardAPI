@@ -26,6 +26,8 @@ namespace GamerHoardAPI.Models
 
             public IdentitiesOrValues<Genre> Genres { get; set; }
 
+            public IdentityOrValue<Cover> Covers { get; set; }
+
             public IdentitiesOrValues<Platform> Platforms { get; set; }
 
             public double? Rating { get; set; }
