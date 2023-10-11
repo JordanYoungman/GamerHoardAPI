@@ -136,15 +136,15 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "related": ".xml"
           }
         }
@@ -163,6 +163,18 @@
           "lib/net5.0/RestEase.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "SteamStorefrontAPI/2.0.1.171": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "lib/net6.0/SteamStorefrontAPI.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SteamStorefrontAPI.dll": {}
         }
       },
       "SteamWebAPI2/4.4.1": {
@@ -704,14 +716,15 @@
         "microsoft.openapi.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.2": {
+      "sha512": "R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -720,13 +733,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -751,6 +766,20 @@
         "lib/netstandard2.1/RestEase.xml",
         "restease.1.5.5.nupkg.sha512",
         "restease.nuspec"
+      ]
+    },
+    "SteamStorefrontAPI/2.0.1.171": {
+      "sha512": "JIjpKZBFxyExaABCcdMBDxq4m6iDzpFTsG3K8l6KGy6nt7vIiDSfSl+fztA2aDXHepujarQETAkDFFOCMdKYhQ==",
+      "type": "package",
+      "path": "steamstorefrontapi/2.0.1.171",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net6.0/SteamStorefrontAPI.dll",
+        "steamstorefrontapi.2.0.1.171.nupkg.sha512",
+        "steamstorefrontapi.nuspec"
       ]
     },
     "SteamWebAPI2/4.4.1": {
@@ -887,6 +916,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "IGDB >= 2.3.2",
+      "SteamStorefrontAPI >= 2.0.1.171",
       "SteamWebAPI2 >= 4.4.1",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
@@ -933,6 +963,10 @@
           "IGDB": {
             "target": "Package",
             "version": "[2.3.2, )"
+          },
+          "SteamStorefrontAPI": {
+            "target": "Package",
+            "version": "[2.0.1.171, )"
           },
           "SteamWebAPI2": {
             "target": "Package",

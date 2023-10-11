@@ -9,6 +9,7 @@
       "GamerHoardAPI/1.0.0": {
         "dependencies": {
           "IGDB": "2.3.2",
+          "SteamStorefrontAPI": "2.0.1.171",
           "SteamWebAPI2": "4.4.1",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -67,17 +68,17 @@
           }
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.2": {
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.1.25517"
+            "fileVersion": "13.0.2.27524"
           }
         }
       },
       "RestEase/1.5.5": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/net5.0/RestEase.dll": {
@@ -86,12 +87,23 @@
           }
         }
       },
+      "SteamStorefrontAPI/2.0.1.171": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/SteamStorefrontAPI.dll": {
+            "assemblyVersion": "2.0.1.171",
+            "fileVersion": "2.0.1.171"
+          }
+        }
+      },
       "SteamWebAPI2/4.4.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.Options": "6.0.0",
           "AutoMapper": "12.0.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "lib/netstandard2.1/Steam.Models.dll": {
@@ -214,12 +226,12 @@
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.1": {
+    "Newtonsoft.Json/13.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
-      "path": "newtonsoft.json/13.0.1",
-      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+      "sha512": "sha512-R2pZ3B0UjeyHShm9vG+Tu0EBb2lC8b0dFzV9gVn50ofHXh9Smjk6kTn7A/FdAsC8B5cKib1OnGYOXxRBz5XQDg==",
+      "path": "newtonsoft.json/13.0.2",
+      "hashPath": "newtonsoft.json.13.0.2.nupkg.sha512"
     },
     "RestEase/1.5.5": {
       "type": "package",
@@ -227,6 +239,13 @@
       "sha512": "sha512-9JhAAObSV8MgrJG4teLfwaVPCnE64CRQw7YepypJgr1pKMi5peGVG+YqLjGwn+m3ucTRrhFW/sINdOusw9MYnQ==",
       "path": "restease/1.5.5",
       "hashPath": "restease.1.5.5.nupkg.sha512"
+    },
+    "SteamStorefrontAPI/2.0.1.171": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JIjpKZBFxyExaABCcdMBDxq4m6iDzpFTsG3K8l6KGy6nt7vIiDSfSl+fztA2aDXHepujarQETAkDFFOCMdKYhQ==",
+      "path": "steamstorefrontapi/2.0.1.171",
+      "hashPath": "steamstorefrontapi.2.0.1.171.nupkg.sha512"
     },
     "SteamWebAPI2/4.4.1": {
       "type": "package",

@@ -74,3 +74,4 @@ C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\GamerHoardAPI\obj\Debu
 C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\GamerHoardAPI\obj\Debug\net6.0\GamerHoardAPI.pdb
 C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\GamerHoardAPI\obj\Debug\net6.0\GamerHoardAPI.genruntimeconfig.cache
 C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\GamerHoardAPI\obj\Debug\net6.0\ref\GamerHoardAPI.dll
+C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\GamerHoardAPI\bin\Debug\net6.0\SteamStorefrontAPI.dll
