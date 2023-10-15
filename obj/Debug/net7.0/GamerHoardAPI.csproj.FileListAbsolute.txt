@@ -1,0 +1,4 @@
+C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\obj\Debug\net7.0\GamerHoardAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\obj\Debug\net7.0\GamerHoardAPI.AssemblyInfoInputs.cache
+C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\obj\Debug\net7.0\GamerHoardAPI.AssemblyInfo.cs
+C:\Users\Jordan\source\repos\JordanYoungman\GamerHoardAPI\obj\Debug\net7.0\GamerHoardAPI.csproj.CoreCompileInputs.cache

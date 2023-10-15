@@ -1,3 +1,6 @@
+using GamerHoardAPI.Models;
+using Microsoft.EntityFrameworkCore;
+
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +18,11 @@ builder.Services.AddCors(options =>
 });
 
 // Add services to the container.
+
+builder.Services.AddDbContext<PostgresContext>(opt =>
+{
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("GameDB"));
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
