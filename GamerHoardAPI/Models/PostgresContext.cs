@@ -55,6 +55,10 @@ public partial class PostgresContext : DbContext
 
     public virtual DbSet<TbGameHeader> TbGameHeaders { get; set; }
 
+    public virtual DbSet<TbListHeader> TbListHeaders { get; set; }
+
+    public virtual DbSet<TbUser> TbUsers { get; set; }
+
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -576,6 +580,39 @@ public partial class PostgresContext : DbContext
                 .HasColumnName("Header image");
             entity.Property(e => e.Publishers).HasDefaultValueSql("''::text");
             entity.Property(e => e.ReleaseDate).HasColumnName("Release date");
+        });
+
+        modelBuilder.Entity<TbListHeader>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("tb_list_header_pkey");
+
+            entity.ToTable("tb_list_header");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.DateAdded)
+                .HasDefaultValueSql("now()")
+                .HasColumnName("date_added");
+            entity.Property(e => e.ImageUrl).HasColumnName("image_url");
+            entity.Property(e => e.IsPublic)
+                .HasDefaultValueSql("false")
+                .HasColumnName("is_public");
+            entity.Property(e => e.Name).HasColumnName("name");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+        });
+
+        modelBuilder.Entity<TbUser>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("users_pkey");
+
+            entity.ToTable("tb_users");
+
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.AvatarImg).HasColumnName("avatar_img");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("now()")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Email).HasColumnName("email");
+            entity.Property(e => e.SteamId).HasColumnName("steam_id");
         });
 
         modelBuilder.Entity<User>(entity =>
